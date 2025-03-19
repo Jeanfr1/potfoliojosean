@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Fira Code', monospace;
+  }
+
+  body {
+    @apply bg-background-dark text-text-secondary;
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .container-wrapper {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-title {
+    @apply text-2xl font-medium text-text-primary mb-6;
+  }
+
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-colors duration-200;
+  }
+
+  .btn-primary {
+    @apply bg-accent-orange text-background-dark hover:bg-opacity-90;
+  }
+
+  .btn-outline {
+    @apply border border-border-color text-text-primary hover:bg-foreground-dark;
+  }
+
+  .nav-item {
+    @apply px-8 py-4 border-r border-border-color text-text-secondary hover:text-text-primary;
+  }
+
+  .nav-item-active {
+    @apply text-text-primary border-b-2 border-accent-orange;
+  }
+
+  .card {
+    @apply bg-foreground-dark border border-border-color rounded-lg p-6;
+  }
+}
+
+/* Custom animations */
+@keyframes snake-move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+
+.snake-animation {
+  animation: snake-move 0.5s infinite alternate;
+}
+
+/* Blur effects for background */
+.blue-blur {
+  @apply absolute w-96 h-96 rounded-full bg-accent-blue opacity-40 blur-[174px];
+}
+
+.green-blur {
+  @apply absolute w-96 h-96 rounded-full bg-accent-green opacity-40 blur-[174px];
+}

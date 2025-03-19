@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300" fill="none">
+  <rect x="100" y="80" width="200" height="140" rx="10" fill="#615FFF" opacity="0.1"/>
+  <rect x="100" y="80" width="200" height="140" rx="10" stroke="#615FFF" stroke-width="4"/>
+  <rect x="120" y="100" width="160" height="100" rx="5" fill="#00D5BE" opacity="0.1"/>
+  <rect x="120" y="100" width="160" height="100" rx="5" stroke="#00D5BE" stroke-width="2"/>
+  <path d="M140 120L260 120" stroke="#00D5BE" stroke-width="2"/>
+  <path d="M140 140L220 140" stroke="#00D5BE" stroke-width="2"/>
+  <path d="M140 160L180 160" stroke="#00D5BE" stroke-width="2"/>
+  <path d="M140 180L240 180" stroke="#00D5BE" stroke-width="2"/>
+  <circle cx="250" cy="150" r="20" fill="#FFB86A" opacity="0.2"/>
+  <circle cx="250" cy="150" r="20" stroke="#FFB86A" stroke-width="2"/>
+  <path d="M240 150L260 150" stroke="#FFB86A" stroke-width="2"/>
+  <path d="M250 140L250 160" stroke="#FFB86A" stroke-width="2"/>
+  <path d="M100 240L300 240" stroke="#615FFF" stroke-width="4"/>
+  <path d="M150 240L150 260" stroke="#615FFF" stroke-width="4"/>
+  <path d="M250 240L250 260" stroke="#615FFF" stroke-width="4"/>
+  <path d="M120 260L280 260" stroke="#615FFF" stroke-width="4"/>
+</svg>
