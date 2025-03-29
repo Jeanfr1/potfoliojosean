@@ -22,7 +22,9 @@ const Home = () => {
           <div className="space-y-2">
             <p className="text-lg text-text-secondary">Hi all. I am</p>
             <h1 className="text-5xl md:text-6xl font-medium text-text-primary">Josean Araujo</h1>
-            <h2 className="text-2xl md:text-3xl text-accent-blue">&gt; Frontend Developer | React | TypeScript | Web3</h2>
+            <h2 className="text-xl md:text-2xl text-accent-blue leading-relaxed max-w-3xl">
+              &gt; Frontend Developer focused on crafting modern, responsive, and user-friendly web applications using React, Redux, Next.js, and Node.js. Currently leveling up in AWS and Web3, because staying curious is part of the job.
+            </h2>
           </div>
 
           <div className="space-y-2">

@@ -1,9 +1,11 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Header = () => {
   const location = useLocation();
   const [activeTab, setActiveTab] = useState(location.pathname);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const isActive = (path: string) => {
     return activeTab === path;
@@ -11,6 +13,15 @@ const Header = () => {
 
   const handleTabClick = (path: string) => {
     setActiveTab(path);
+  };
+
+  // Close mobile menu when route changes
+  useEffect(() => {
+    setMobileMenuOpen(false);
+  }, [location.pathname]);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
   };
 
   return (
@@ -23,7 +34,17 @@ const Header = () => {
             </Link>
           </div>
 
-          <nav className="flex">
+          {/* Mobile menu button - temporarily visible on all screens for testing */}
+          <button
+            className="block text-text-primary hover:text-accent-orange focus:outline-none"
+            onClick={toggleMobileMenu}
+            aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+          >
+            {mobileMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+          </button>
+
+          {/* Desktop navigation - hidden on small screens */}
+          <nav className="hidden md:flex">
             <Link
               to="/"
               className={`nav-item ${isActive('/') ? 'nav-item-active' : ''}`}
@@ -50,11 +71,45 @@ const Header = () => {
 
         <Link
           to="/contact"
-          className={`nav-item border-l ${isActive('/contact') ? 'nav-item-active' : ''}`}
+          className={`nav-item border-l hidden md:block ${isActive('/contact') ? 'nav-item-active' : ''}`}
           onClick={() => handleTabClick('/contact')}
         >
           _contact-me
         </Link>
+      </div>
+
+      {/* Mobile menu - only visible when open on small screens */}
+      <div className={`md:hidden ${mobileMenuOpen ? 'block' : 'hidden'}`}>
+        <nav className="flex flex-col bg-foreground-dark border-t border-border-color">
+          <Link
+            to="/"
+            className={`py-4 px-6 border-b border-border-color ${isActive('/') ? 'text-text-primary border-l-2 border-l-accent-orange' : 'text-text-secondary'}`}
+            onClick={() => handleTabClick('/')}
+          >
+            _hello
+          </Link>
+          <Link
+            to="/about"
+            className={`py-4 px-6 border-b border-border-color ${isActive('/about') ? 'text-text-primary border-l-2 border-l-accent-orange' : 'text-text-secondary'}`}
+            onClick={() => handleTabClick('/about')}
+          >
+            _about-me
+          </Link>
+          <Link
+            to="/projects"
+            className={`py-4 px-6 border-b border-border-color ${isActive('/projects') ? 'text-text-primary border-l-2 border-l-accent-orange' : 'text-text-secondary'}`}
+            onClick={() => handleTabClick('/projects')}
+          >
+            _projects
+          </Link>
+          <Link
+            to="/contact"
+            className={`py-4 px-6 border-b border-border-color ${isActive('/contact') ? 'text-text-primary border-l-2 border-l-accent-orange' : 'text-text-secondary'}`}
+            onClick={() => handleTabClick('/contact')}
+          >
+            _contact-me
+          </Link>
+        </nav>
       </div>
     </header>
   );
