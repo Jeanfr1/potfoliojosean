@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import SnakeGame from '../Snake/SnakeGame';
+import { useState } from "react";
+import SnakeGame from "../Snake/SnakeGame";
 
 const Home = () => {
   const [gameCompleted, setGameCompleted] = useState(false);
@@ -21,17 +21,33 @@ const Home = () => {
         <div className="flex flex-col justify-center space-y-16">
           <div className="space-y-2">
             <p className="text-lg text-text-secondary">Hi all. I am</p>
-            <h1 className="text-5xl md:text-6xl font-medium text-text-primary">Josean Araujo</h1>
+            <h1 className="text-5xl md:text-6xl font-medium text-text-primary">
+              Josean Araujo
+            </h1>
             <h2 className="text-xl md:text-2xl text-accent-blue leading-relaxed max-w-3xl">
-              &gt; Frontend Developer focused on crafting modern, responsive, and user-friendly web applications using React, Redux, Next.js, and Node.js. Currently leveling up in AWS and Web3, because staying curious is part of the job.
+              &gt; AI-Augmented Frontend Developer specializing in GenAI &
+              Prompt Engineering. Building modern, intelligent web applications
+              with React, Node.js, and Web3. Leveraging AI tools like GitHub
+              Copilot, Cursor, and Claude to code faster, smarter, and more
+              creatively.
             </h2>
           </div>
 
           <div className="space-y-2">
-            <p className="text-text-secondary">// complete the game to continue</p>
+            <p className="text-text-secondary">
+              // complete the game to continue
+            </p>
             <p className="text-text-secondary">// find my profile on Github:</p>
             <p className="text-text-primary">
-              const githubLink = <a href="https://github.com/Jeanfr1" target="_blank" rel="noopener noreferrer" className="text-accent-orange hover:underline">"https://github.com/Jeanfr1"</a>
+              const githubLink ={" "}
+              <a
+                href="https://github.com/Jeanfr1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent-orange hover:underline"
+              >
+                "https://github.com/Jeanfr1"
+              </a>
             </p>
           </div>
         </div>
@@ -47,10 +63,12 @@ const Home = () => {
         <div className="mt-12 p-6 bg-foreground-dark border border-border-color rounded-lg">
           <h3 className="text-xl text-text-primary mb-4">🎮 Game Completed!</h3>
           <p className="text-text-secondary mb-2">
-            Thanks for playing! Now you can explore more about my work and skills.
+            Thanks for playing! Now you can explore more about my work and
+            skills.
           </p>
           <p className="text-text-secondary">
-            Feel free to check out my projects or get in touch if you'd like to collaborate.
+            Feel free to check out my projects or get in touch if you'd like to
+            collaborate.
           </p>
         </div>
       )}
