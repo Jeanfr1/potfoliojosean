@@ -25,12 +25,16 @@ const Home = () => {
               Josean Araujo
             </h1>
             <h2 className="text-xl md:text-2xl text-accent-blue leading-relaxed max-w-3xl">
-              &gt; AI-Augmented Frontend Developer specializing in GenAI &
-              Prompt Engineering. Building modern, intelligent web applications
-              with React, Node.js, and Web3. Leveraging AI tools like GitHub
-              Copilot, Cursor, and Claude to code faster, smarter, and more
-              creatively.
+              &gt; GenAI Developer | Frontend Engineer
             </h2>
+            <p className="text-text-secondary mt-4 max-w-3xl">
+              A GenAI Developer with a solid foundation in frontend engineering,
+              communication, and technical training. I design intelligent
+              systems using GPT APIs, automation tools, and AI agents to
+              streamline workflows and boost productivity. Passionate about
+              innovation and learning, I blend modern web technologies with
+              generative AI to build impactful digital experiences.
+            </p>
           </div>
 
           <div className="space-y-2">

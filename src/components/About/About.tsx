@@ -1,5 +1,12 @@
-import { FaReact, FaNodeJs, FaAws, FaCode, FaDatabase, FaGlobe } from 'react-icons/fa';
-import { SiTailwindcss, SiNextdotjs, SiTypescript } from 'react-icons/si';
+import {
+  FaReact,
+  FaNodeJs,
+  FaAws,
+  FaCode,
+  FaDatabase,
+  FaGlobe,
+} from "react-icons/fa";
+import { SiTailwindcss, SiNextdotjs, SiTypescript } from "react-icons/si";
 
 const About = () => {
   return (
@@ -12,29 +19,38 @@ const About = () => {
 
       <div className="space-y-12">
         <section>
-          <h2 className="text-3xl font-medium text-text-primary mb-6">About Me</h2>
+          <h2 className="text-3xl font-medium text-text-primary mb-6">
+            About Me
+          </h2>
           <div className="bg-foreground-dark border border-border-color rounded-lg p-6">
             <p className="text-text-secondary mb-4">
-              I'm a Frontend Developer specializing in React, TypeScript, Node.js, and Web3 technologies, building scalable,
-              high-performance applications with a focus on blockchain integration and user experience.
-              With expertise in both frontend architecture and Web3 development, I create solutions that bridge traditional web
-              applications with decentralized technologies.
+              A GenAI Developer with a solid foundation in frontend engineering,
+              communication, and technical training. I design intelligent
+              systems using GPT APIs, automation tools, and AI agents to
+              streamline workflows and boost productivity. Passionate about
+              innovation and learning, I blend modern web technologies with
+              generative AI to build impactful digital experiences.
             </p>
             <p className="text-text-secondary mb-4">
-              My diverse background includes leading projects in customer service, technical training, and fullstack development
-              across global companies like Microsoft and HP. This unique combination of technical expertise and business
-              acumen enables me to tackle complex challenges with innovative solutions.
+              My diverse background includes leading projects in customer
+              service, technical training, and development across global
+              companies. This unique combination of technical expertise and
+              business acumen enables me to tackle complex challenges with
+              innovative AI-driven solutions.
             </p>
             <p className="text-text-secondary">
-              Currently, at KASST as a freelance Frontend Developer, I'm focused on building high-impact, next-generation Web3
-              applications that redefine decentralized user experiences. I work closely with designers, blockchain engineers,
-              and product teams to deliver exceptional digital products.
+              Currently, I'm focused on building high-impact, next-generation
+              applications that leverage GenAI capabilities. I work closely with
+              teams to deliver exceptional digital products that integrate
+              modern web technologies with artificial intelligence.
             </p>
           </div>
         </section>
 
         <section>
-          <h2 className="text-3xl font-medium text-text-primary mb-6">Skills</h2>
+          <h2 className="text-3xl font-medium text-text-primary mb-6">
+            Skills
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Frontend Skills */}
             <div className="bg-foreground-dark border border-border-color rounded-lg p-6">
@@ -52,10 +68,12 @@ const About = () => {
                   <SiTypescript className="text-accent-blue mr-2" /> TypeScript
                 </li>
                 <li className="flex items-center text-text-secondary">
-                  <SiTailwindcss className="text-accent-green mr-2" /> Tailwind CSS
+                  <SiTailwindcss className="text-accent-green mr-2" /> Tailwind
+                  CSS
                 </li>
                 <li className="flex items-center text-text-secondary">
-                  <FaCode className="text-accent-orange mr-2" /> Responsive Design
+                  <FaCode className="text-accent-orange mr-2" /> Responsive
+                  Design
                 </li>
               </ul>
             </div>
@@ -70,6 +88,9 @@ const About = () => {
                   <FaNodeJs className="text-accent-green mr-2" /> Node.js
                 </li>
                 <li className="flex items-center text-text-secondary">
+                  <FaDatabase className="text-accent-blue mr-2" /> PostgreSQL
+                </li>
+                <li className="flex items-center text-text-secondary">
                   <FaDatabase className="text-accent-blue mr-2" /> RESTful APIs
                 </li>
                 <li className="flex items-center text-text-secondary">
@@ -78,20 +99,30 @@ const About = () => {
               </ul>
             </div>
 
-            {/* Web3 & Blockchain */}
+            {/* GenAI & Automation */}
             <div className="bg-foreground-dark border border-border-color rounded-lg p-6">
               <h3 className="text-xl text-accent-orange mb-4 flex items-center">
-                <FaCode className="mr-2" /> Web3 & Blockchain
+                <FaCode className="mr-2" /> GenAI & Automation
               </h3>
-              <p className="text-text-secondary mb-2">
-                I specialize in blockchain technology and decentralized applications development:
-              </p>
-              <ul className="space-y-2">
-                <li className="text-text-secondary">• Ethers.js & Web3.js Integration</li>
-                <li className="text-text-secondary">• Smart Contract Development with Hardhat</li>
-                <li className="text-text-secondary">• DApp Architecture & Development</li>
-                <li className="text-text-secondary">• DeFi Applications</li>
-                <li className="text-text-secondary">• Gas Optimization Techniques</li>
+              <ul className="space-y-3">
+                <li className="flex items-center text-text-secondary">
+                  <FaCode className="text-accent-green mr-2" /> Make / Zapier
+                </li>
+                <li className="flex items-center text-text-secondary">
+                  <FaCode className="text-accent-blue mr-2" /> Prompt Engineering
+                </li>
+                <li className="flex items-center text-text-secondary">
+                  <FaCode className="text-accent-orange mr-2" /> OpenAI / Claude / Gemini
+                </li>
+                <li className="flex items-center text-text-secondary">
+                  <FaCode className="text-accent-green mr-2" /> Cursor
+                </li>
+                <li className="flex items-center text-text-secondary">
+                  <FaCode className="text-accent-blue mr-2" /> Cline
+                </li>
+                <li className="flex items-center text-text-secondary">
+                  <FaCode className="text-accent-orange mr-2" /> Copilot
+                </li>
               </ul>
             </div>
 
@@ -102,13 +133,16 @@ const About = () => {
               </h3>
               <ul className="space-y-3">
                 <li className="flex items-center text-text-secondary">
-                  <span className="w-4 h-4 bg-accent-blue rounded-full mr-2"></span> English (Fluent)
+                  <span className="w-4 h-4 bg-accent-blue rounded-full mr-2"></span>{" "}
+                  English (Fluent)
                 </li>
                 <li className="flex items-center text-text-secondary">
-                  <span className="w-4 h-4 bg-accent-green rounded-full mr-2"></span> French (Fluent)
+                  <span className="w-4 h-4 bg-accent-green rounded-full mr-2"></span>{" "}
+                  French (Fluent)
                 </li>
                 <li className="flex items-center text-text-secondary">
-                  <span className="w-4 h-4 bg-accent-orange rounded-full mr-2"></span> Portuguese (Native)
+                  <span className="w-4 h-4 bg-accent-orange rounded-full mr-2"></span>{" "}
+                  Portuguese (Native)
                 </li>
               </ul>
             </div>
@@ -120,47 +154,42 @@ const About = () => {
           <div className="space-y-6">
             <div className="bg-foreground-dark border border-border-color rounded-lg p-6">
               <h3 className="text-xl text-accent-orange">KASST</h3>
-              <p className="text-text-primary mb-2">Frontend Developer | React | TypeScript | Web3 Enthusiast | UX/UI</p>
-              <p className="text-text-secondary mb-4">Dec 2024 - Present (4 mos) • Freelance • Remote</p>
+              <p className="text-text-primary mb-2">Frontend Developer | Freelance</p>
+              <p className="text-text-secondary mb-4">FRANCE | 2024 - Present</p>
               <ul className="space-y-2">
-                <li className="text-text-secondary">• Developing modern and scalable frontend architectures using React, TypeScript, and Node.js</li>
-                <li className="text-text-secondary">• Integrating Web3 solutions with Ethers.js, Hardhat, and smart contracts for decentralized applications</li>
-                <li className="text-text-secondary">• Translating UI/UX designs into pixel-perfect, responsive, and interactive user interfaces</li>
-                <li className="text-text-secondary">• Leading 0-to-1 project initiatives for innovative Web3 solutions in decentralized finance (DeFi)</li>
-                <li className="text-text-secondary">• Optimizing performance, debugging, and implementing best practices for dApp development</li>
+                <li className="text-text-secondary">• Developed high-performance user interfaces using React.js, Next.js, and TypeScript</li>
+                <li className="text-text-secondary">• Created reusable components with Redux and React Query for state management</li>
+                <li className="text-text-secondary">• Enhanced UI interactivity using Framer Motion animations</li>
+                <li className="text-text-secondary">• Integrated Supabase and RESTful APIs for real-time data interactions</li>
+                <li className="text-text-secondary">• Applied SEO strategies and accessibility standards for optimal reach</li>
+                <li className="text-text-secondary">• Supported minor GenAI chatbot integrations via API</li>
               </ul>
             </div>
 
             <div className="bg-foreground-dark border border-border-color rounded-lg p-6">
               <h3 className="text-xl text-accent-orange">Agence Jaraujo</h3>
-              <p className="text-text-primary mb-2">Frontend Developer</p>
-              <p className="text-text-secondary mb-4">2023 - 2024</p>
+              <p className="text-text-primary mb-2">GenAI Developer & AI Automation Engineer | Freelance</p>
+              <p className="text-text-secondary mb-4">PARIS, FRANCE | 2023 - 2024</p>
               <ul className="space-y-2">
-                <li className="text-text-secondary">• Developed AI-driven tools to automate repetitive tasks, reducing manual workload by 40%</li>
-                <li className="text-text-secondary">• Integrated data analysis pipelines using AI models for predictive insights</li>
-                <li className="text-text-secondary">• Implemented smart automation workflows that enhanced project delivery efficiency by 25%</li>
+                <li className="text-text-secondary">• Building autonomous AI agents (CEO > PM > agents) with Relevance AI and LangChain</li>
+                <li className="text-text-secondary">• Integrating OpenAI GPT APIs to automate WhatsApp via Twilio: auto-replies, scheduling, CRM workflows</li>
+                <li className="text-text-secondary">• Developing smart content generation pipelines for LinkedIn and Instagram using LLMs</li>
+                <li className="text-text-secondary">• Automating tasks with Make.com: from market research to travel planning and document generation</li>
+                <li className="text-text-secondary">• Structuring vector database memory systems for persistent chatbots using Pinecone and Supabase</li>
+                <li className="text-text-secondary">• Designing dashboards powered by AI agents for customer insights and lead tracking</li>
               </ul>
             </div>
 
             <div className="bg-foreground-dark border border-border-color rounded-lg p-6">
-              <h3 className="text-xl text-accent-orange">HP (HPE Flex Offers Program)</h3>
-              <p className="text-text-primary mb-2">Technical Trainer</p>
-              <p className="text-text-secondary mb-4">2020 - 2023</p>
+              <h3 className="text-xl text-accent-orange">HPE | TD SYNNEX</h3>
+              <p className="text-text-primary mb-2">Head of Presentation and Training</p>
+              <p className="text-text-secondary mb-4">PARIS, FRANCE | 2022 - 2023</p>
               <ul className="space-y-2">
-                <li className="text-text-secondary">• Led strategic outreach and training initiatives across France</li>
-                <li className="text-text-secondary">• Designed customized training solutions that improved customer engagement</li>
-                <li className="text-text-secondary">• Contributed to a 20% increase in program adoption</li>
-              </ul>
-            </div>
-
-            <div className="bg-foreground-dark border border-border-color rounded-lg p-6">
-              <h3 className="text-xl text-accent-orange">Microsoft</h3>
-              <p className="text-text-primary mb-2">Business Technology Specialist</p>
-              <p className="text-text-secondary mb-4">2018 - 2020</p>
-              <ul className="space-y-2">
-                <li className="text-text-secondary">• Supported business technology projects that streamlined processes</li>
-                <li className="text-text-secondary">• Enhanced client solutions through innovative automation strategies</li>
-                <li className="text-text-secondary">• Increased productivity metrics within client organizations</li>
+                <li className="text-text-secondary">• Delivered engaging AI-centric tech presentations and training across Europe</li>
+                <li className="text-text-secondary">• Created onboarding content with LMS tools (Articulate, Adobe Captivate, Camtasia)</li>
+                <li className="text-text-secondary">• Introduced internal AI workflow documentation and GPT-based presentation builders</li>
+                <li className="text-text-secondary">• Built dashboards with Power BI and Excel Advanced to track AI training KPIs</li>
+                <li className="text-text-secondary">• Conducted webinars using MS Teams, Zoom, GoToWebinar — boosting adoption by 20%</li>
               </ul>
             </div>
           </div>

@@ -1,21 +1,30 @@
-import { useState, FormEvent } from 'react';
-import { FaEnvelope, FaMapMarkerAlt, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { useState, FormEvent } from "react";
+import {
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaGithub,
+  FaLinkedin,
+  FaTwitter,
+  FaPhone,
+} from "react-icons/fa";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
   const [formSubmitted, setFormSubmitted] = useState(false);
-  const [formError, setFormError] = useState('');
+  const [formError, setFormError] = useState("");
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
@@ -24,28 +33,28 @@ const Contact = () => {
 
     // Simple validation
     if (!formData.name || !formData.email || !formData.message) {
-      setFormError('Please fill in all required fields.');
+      setFormError("Please fill in all required fields.");
       return;
     }
 
-    if (!formData.email.includes('@')) {
-      setFormError('Please enter a valid email address.');
+    if (!formData.email.includes("@")) {
+      setFormError("Please enter a valid email address.");
       return;
     }
 
     // In a real application, you would send the form data to a server here
-    console.log('Form submitted:', formData);
+    console.log("Form submitted:", formData);
 
     // Show success message
-    setFormError('');
+    setFormError("");
     setFormSubmitted(true);
 
     // Reset form
     setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
     });
   };
 
@@ -63,11 +72,16 @@ const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Contact Form */}
           <div className="bg-foreground-dark border border-border-color rounded-lg p-6">
-            <h3 className="text-xl text-accent-orange mb-6">Send Me a Message</h3>
+            <h3 className="text-xl text-accent-orange mb-6">
+              Send Me a Message
+            </h3>
 
             {formSubmitted ? (
               <div className="bg-[#1D293D] border border-accent-green p-4 rounded-lg mb-6">
-                <p className="text-accent-green">Thank you for your message! I'll get back to you as soon as possible.</p>
+                <p className="text-accent-green">
+                  Thank you for your message! I'll get back to you as soon as
+                  possible.
+                </p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
@@ -78,7 +92,12 @@ const Contact = () => {
                 )}
 
                 <div>
-                  <label htmlFor="name" className="block text-text-secondary mb-2">Name *</label>
+                  <label
+                    htmlFor="name"
+                    className="block text-text-secondary mb-2"
+                  >
+                    Name *
+                  </label>
                   <input
                     type="text"
                     id="name"
@@ -90,7 +109,12 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-text-secondary mb-2">Email *</label>
+                  <label
+                    htmlFor="email"
+                    className="block text-text-secondary mb-2"
+                  >
+                    Email *
+                  </label>
                   <input
                     type="email"
                     id="email"
@@ -102,7 +126,12 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="subject" className="block text-text-secondary mb-2">Subject</label>
+                  <label
+                    htmlFor="subject"
+                    className="block text-text-secondary mb-2"
+                  >
+                    Subject
+                  </label>
                   <input
                     type="text"
                     id="subject"
@@ -114,7 +143,12 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-text-secondary mb-2">Message *</label>
+                  <label
+                    htmlFor="message"
+                    className="block text-text-secondary mb-2"
+                  >
+                    Message *
+                  </label>
                   <textarea
                     id="message"
                     name="message"
@@ -126,10 +160,7 @@ const Contact = () => {
                 </div>
 
                 <div className="pt-2">
-                  <button
-                    type="submit"
-                    className="btn btn-primary"
-                  >
+                  <button type="submit" className="btn btn-primary">
                     send-message
                   </button>
                 </div>
@@ -140,14 +171,26 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="space-y-6">
             <div className="bg-foreground-dark border border-border-color rounded-lg p-6">
-              <h3 className="text-xl text-accent-orange mb-6">Contact Information</h3>
+              <h3 className="text-xl text-accent-orange mb-6">
+                Contact Information
+              </h3>
 
               <div className="space-y-4">
                 <div className="flex items-start">
                   <FaEnvelope className="text-accent-green mt-1 mr-4" />
                   <div>
                     <h4 className="text-text-primary">Email</h4>
-                    <p className="text-text-secondary">contact@joseanaraujo.com</p>
+                    <p className="text-text-secondary">
+                      contactjoseanaraujo@gmail.com
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start">
+                  <FaPhone className="text-accent-green mt-1 mr-4" />
+                  <div>
+                    <h4 className="text-text-primary">Phone</h4>
+                    <p className="text-text-secondary">+33670640254</p>
                   </div>
                 </div>
 
@@ -162,7 +205,9 @@ const Contact = () => {
             </div>
 
             <div className="bg-foreground-dark border border-border-color rounded-lg p-6">
-              <h3 className="text-xl text-accent-orange mb-6">Connect With Me</h3>
+              <h3 className="text-xl text-accent-orange mb-6">
+                Connect With Me
+              </h3>
 
               <div className="space-y-4">
                 <a
@@ -176,13 +221,13 @@ const Contact = () => {
                 </a>
 
                 <a
-                  href="https://www.linkedin.com/in/josean-araujo-3ba63b17b/"
+                  href="https://www.linkedin.com/in/josean-araujo/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center text-text-secondary hover:text-accent-blue transition-colors"
                 >
                   <FaLinkedin className="mr-4" size={20} />
-                  <span>linkedin.com/in/josean-araujo-3ba63b17b</span>
+                  <span>LinkedIn Josean</span>
                 </a>
 
                 <a
@@ -199,8 +244,12 @@ const Contact = () => {
 
             <div className="bg-foreground-dark border border-border-color rounded-lg p-6">
               <h3 className="text-xl text-accent-orange mb-4">Working Hours</h3>
-              <p className="text-text-secondary mb-2">Monday - Friday: 9:00 AM - 6:00 PM (CET)</p>
-              <p className="text-text-secondary">I'll respond to your message as soon as possible!</p>
+              <p className="text-text-secondary mb-2">
+                Monday - Friday: 9:00 AM - 6:00 PM (CET)
+              </p>
+              <p className="text-text-secondary">
+                I'll respond to your message as soon as possible!
+              </p>
             </div>
           </div>
         </div>
@@ -208,14 +257,32 @@ const Contact = () => {
         <div className="code-block mt-8">
           <span className="code-line code-comment">// Let's connect</span>
           <span className="code-line">
-            <span className="code-keyword">const</span> <span className="code-function">sendMessage</span> = (<span className="code-keyword">message</span>) =&gt; {'{'}
+            <span className="code-keyword">const</span>{" "}
+            <span className="code-function">sendMessage</span> = (
+            <span className="code-keyword">message</span>) =&gt; {"{"}
           </span>
-          <span className="code-line">  <span className="code-keyword">if</span> (message.isInteresting) {'{'}  </span>
-          <span className="code-line">    <span className="code-keyword">return</span> <span className="code-string">"I'll respond quickly!"</span>;</span>
-          <span className="code-line">  {'}'} <span className="code-keyword">else</span> {'{'}  </span>
-          <span className="code-line">    <span className="code-keyword">return</span> <span className="code-string">"I'll still respond quickly!"</span>;</span>
-          <span className="code-line">  {'}'}</span>
-          <span className="code-line">{'}'};</span>
+          <span className="code-line">
+            {" "}
+            <span className="code-keyword">
+              if
+            </span> (message.isInteresting) {"{"}{" "}
+          </span>
+          <span className="code-line">
+            {" "}
+            <span className="code-keyword">return</span>{" "}
+            <span className="code-string">"I'll respond quickly!"</span>;
+          </span>
+          <span className="code-line">
+            {" "}
+            {"}"} <span className="code-keyword">else</span> {"{"}{" "}
+          </span>
+          <span className="code-line">
+            {" "}
+            <span className="code-keyword">return</span>{" "}
+            <span className="code-string">"I'll still respond quickly!"</span>;
+          </span>
+          <span className="code-line"> {"}"}</span>
+          <span className="code-line">{"}"};</span>
         </div>
       </div>
     </div>
