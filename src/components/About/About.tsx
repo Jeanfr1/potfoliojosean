@@ -59,7 +59,13 @@ const About = () => {
               </h3>
               <ul className="space-y-3">
                 <li className="flex items-center text-text-secondary">
+                  <FaCode className="text-accent-orange mr-2" /> JavaScript
+                </li>
+                <li className="flex items-center text-text-secondary">
                   <FaReact className="text-accent-blue mr-2" /> React.js
+                </li>
+                <li className="flex items-center text-text-secondary">
+                  <FaCode className="text-accent-green mr-2" /> Vue.js
                 </li>
                 <li className="flex items-center text-text-secondary">
                   <SiNextdotjs className="text-text-primary mr-2" /> Next.js
@@ -72,8 +78,10 @@ const About = () => {
                   CSS
                 </li>
                 <li className="flex items-center text-text-secondary">
-                  <FaCode className="text-accent-orange mr-2" /> Responsive
-                  Design
+                  <FaCode className="text-accent-orange mr-2" /> Webpack/Vite
+                </li>
+                <li className="flex items-center text-text-secondary">
+                  <FaCode className="text-accent-blue mr-2" /> Responsive Design
                 </li>
               </ul>
             </div>
@@ -109,10 +117,12 @@ const About = () => {
                   <FaCode className="text-accent-green mr-2" /> Make / Zapier
                 </li>
                 <li className="flex items-center text-text-secondary">
-                  <FaCode className="text-accent-blue mr-2" /> Prompt Engineering
+                  <FaCode className="text-accent-blue mr-2" /> Prompt
+                  Engineering
                 </li>
                 <li className="flex items-center text-text-secondary">
-                  <FaCode className="text-accent-orange mr-2" /> OpenAI / Claude / Gemini
+                  <FaCode className="text-accent-orange mr-2" /> OpenAI / Claude
+                  / Gemini
                 </li>
                 <li className="flex items-center text-text-secondary">
                   <FaCode className="text-accent-green mr-2" /> Cursor
@@ -150,46 +160,109 @@ const About = () => {
         </section>
 
         <section>
-          <h2 className="text-3xl font-medium text-text-primary mb-6">Experience</h2>
+          <h2 className="text-3xl font-medium text-text-primary mb-6">
+            Experience
+          </h2>
           <div className="space-y-6">
             <div className="bg-foreground-dark border border-border-color rounded-lg p-6">
               <h3 className="text-xl text-accent-orange">KASST</h3>
-              <p className="text-text-primary mb-2">Frontend Developer | Freelance</p>
-              <p className="text-text-secondary mb-4">FRANCE | 2024 - Present</p>
+              <p className="text-text-primary mb-2">
+                Frontend Developer | Freelance
+              </p>
+              <p className="text-text-secondary mb-4">
+                FRANCE | 2024 - Present
+              </p>
               <ul className="space-y-2">
-                <li className="text-text-secondary">• Developed high-performance user interfaces using React.js, Next.js, and TypeScript</li>
-                <li className="text-text-secondary">• Created reusable components with Redux and React Query for state management</li>
-                <li className="text-text-secondary">• Enhanced UI interactivity using Framer Motion animations</li>
-                <li className="text-text-secondary">• Integrated Supabase and RESTful APIs for real-time data interactions</li>
-                <li className="text-text-secondary">• Applied SEO strategies and accessibility standards for optimal reach</li>
-                <li className="text-text-secondary">• Supported minor GenAI chatbot integrations via API</li>
+                <li className="text-text-secondary">
+                  • Developed high-performance user interfaces using React.js,
+                  Next.js, and TypeScript
+                </li>
+                <li className="text-text-secondary">
+                  • Created reusable components with Redux and React Query for
+                  state management
+                </li>
+                <li className="text-text-secondary">
+                  • Enhanced UI interactivity using Framer Motion animations
+                </li>
+                <li className="text-text-secondary">
+                  • Integrated Supabase and RESTful APIs for real-time data
+                  interactions
+                </li>
+                <li className="text-text-secondary">
+                  • Applied SEO strategies and accessibility standards for
+                  optimal reach
+                </li>
+                <li className="text-text-secondary">
+                  • Supported minor GenAI chatbot integrations via API
+                </li>
               </ul>
             </div>
 
             <div className="bg-foreground-dark border border-border-color rounded-lg p-6">
               <h3 className="text-xl text-accent-orange">Agence Jaraujo</h3>
-              <p className="text-text-primary mb-2">GenAI Developer & AI Automation Engineer | Freelance</p>
-              <p className="text-text-secondary mb-4">PARIS, FRANCE | 2023 - 2024</p>
+              <p className="text-text-primary mb-2">
+                GenAI Developer & AI Automation Engineer | Freelance
+              </p>
+              <p className="text-text-secondary mb-4">
+                PARIS, FRANCE | 2023 - 2024
+              </p>
               <ul className="space-y-2">
-                <li className="text-text-secondary">• Building autonomous AI agents (CEO > PM > agents) with Relevance AI and LangChain</li>
-                <li className="text-text-secondary">• Integrating OpenAI GPT APIs to automate WhatsApp via Twilio: auto-replies, scheduling, CRM workflows</li>
-                <li className="text-text-secondary">• Developing smart content generation pipelines for LinkedIn and Instagram using LLMs</li>
-                <li className="text-text-secondary">• Automating tasks with Make.com: from market research to travel planning and document generation</li>
-                <li className="text-text-secondary">• Structuring vector database memory systems for persistent chatbots using Pinecone and Supabase</li>
-                <li className="text-text-secondary">• Designing dashboards powered by AI agents for customer insights and lead tracking</li>
+                <li className="text-text-secondary">
+                  • Building autonomous AI agents (CEO &gt; PM &gt; agents) with
+                  Relevance AI and LangChain
+                </li>
+                <li className="text-text-secondary">
+                  • Integrating OpenAI GPT APIs to automate WhatsApp via Twilio:
+                  auto-replies, scheduling, CRM workflows
+                </li>
+                <li className="text-text-secondary">
+                  • Developing smart content generation pipelines for LinkedIn
+                  and Instagram using LLMs
+                </li>
+                <li className="text-text-secondary">
+                  • Automating tasks with Make.com: from market research to
+                  travel planning and document generation
+                </li>
+                <li className="text-text-secondary">
+                  • Structuring vector database memory systems for persistent
+                  chatbots using Pinecone and Supabase
+                </li>
+                <li className="text-text-secondary">
+                  • Designing dashboards powered by AI agents for customer
+                  insights and lead tracking
+                </li>
               </ul>
             </div>
 
             <div className="bg-foreground-dark border border-border-color rounded-lg p-6">
               <h3 className="text-xl text-accent-orange">HPE | TD SYNNEX</h3>
-              <p className="text-text-primary mb-2">Head of Presentation and Training</p>
-              <p className="text-text-secondary mb-4">PARIS, FRANCE | 2022 - 2023</p>
+              <p className="text-text-primary mb-2">
+                Head of Presentation and Training
+              </p>
+              <p className="text-text-secondary mb-4">
+                PARIS, FRANCE | 2022 - 2023
+              </p>
               <ul className="space-y-2">
-                <li className="text-text-secondary">• Delivered engaging AI-centric tech presentations and training across Europe</li>
-                <li className="text-text-secondary">• Created onboarding content with LMS tools (Articulate, Adobe Captivate, Camtasia)</li>
-                <li className="text-text-secondary">• Introduced internal AI workflow documentation and GPT-based presentation builders</li>
-                <li className="text-text-secondary">• Built dashboards with Power BI and Excel Advanced to track AI training KPIs</li>
-                <li className="text-text-secondary">• Conducted webinars using MS Teams, Zoom, GoToWebinar — boosting adoption by 20%</li>
+                <li className="text-text-secondary">
+                  • Delivered engaging AI-centric tech presentations and
+                  training across Europe
+                </li>
+                <li className="text-text-secondary">
+                  • Created onboarding content with LMS tools (Articulate, Adobe
+                  Captivate, Camtasia)
+                </li>
+                <li className="text-text-secondary">
+                  • Introduced internal AI workflow documentation and GPT-based
+                  presentation builders
+                </li>
+                <li className="text-text-secondary">
+                  • Built dashboards with Power BI and Excel Advanced to track
+                  AI training KPIs
+                </li>
+                <li className="text-text-secondary">
+                  • Conducted webinars using MS Teams, Zoom, GoToWebinar —
+                  boosting adoption by 20%
+                </li>
               </ul>
             </div>
           </div>
