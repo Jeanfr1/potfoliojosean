@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300" fill="none">
+  <!-- Gift box base -->
+  <rect x="150" y="160" width="100" height="80" rx="8" fill="#615FFF" opacity="0.2"/>
+  <rect x="150" y="160" width="100" height="80" rx="8" stroke="#615FFF" stroke-width="4"/>
+
+  <!-- Gift ribbon horizontal -->
+  <rect x="140" y="190" width="120" height="20" fill="#00D5BE" opacity="0.3"/>
+  <rect x="140" y="190" width="120" height="20" stroke="#00D5BE" stroke-width="3"/>
+
+  <!-- Gift ribbon vertical -->
+  <rect x="190" y="150" width="20" height="100" fill="#00D5BE" opacity="0.3"/>
+  <rect x="190" y="150" width="20" height="100" stroke="#00D5BE" stroke-width="3"/>
+
+  <!-- Gift bow -->
+  <ellipse cx="180" cy="160" rx="15" ry="8" fill="#FFB86A"/>
+  <ellipse cx="220" cy="160" rx="15" ry="8" fill="#FFB86A"/>
+  <circle cx="200" cy="160" r="6" fill="#FFB86A"/>
+
+  <!-- Tracking elements - small circles/dots -->
+  <circle cx="80" cy="100" r="8" fill="#615FFF"/>
+  <circle cx="120" cy="80" r="6" fill="#00D5BE"/>
+  <circle cx="320" cy="90" r="8" fill="#615FFF"/>
+  <circle cx="280" cy="110" r="6" fill="#00D5BE"/>
+
+  <!-- Connection lines for tracking -->
+  <path d="M80 100L150 160" stroke="#FFB86A" stroke-width="2" opacity="0.6"/>
+  <path d="M320 90L250 160" stroke="#FFB86A" stroke-width="2" opacity="0.6"/>
+
+  <!-- Event markers -->
+  <rect x="70" y="200" width="30" height="20" rx="4" fill="#00D5BE" opacity="0.2"/>
+  <rect x="70" y="200" width="30" height="20" rx="4" stroke="#00D5BE" stroke-width="2"/>
+
+  <rect x="300" y="220" width="30" height="20" rx="4" fill="#615FFF" opacity="0.2"/>
+  <rect x="300" y="220" width="30" height="20" rx="4" stroke="#615FFF" stroke-width="2"/>
+</svg>

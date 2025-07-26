@@ -5,8 +5,9 @@ import {
   FaCode,
   FaDatabase,
   FaGlobe,
+  FaMobile,
 } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs, SiTypescript } from "react-icons/si";
+import { SiTailwindcss, SiNextdotjs, SiTypescript, SiExpo, SiFlutter } from "react-icons/si";
 
 const About = () => {
   return (
@@ -42,7 +43,10 @@ const About = () => {
               Currently, I'm focused on building high-impact, next-generation
               applications that leverage GenAI capabilities. I work closely with
               teams to deliver exceptional digital products that integrate
-              modern web technologies with artificial intelligence.
+              modern web technologies with artificial intelligence. Recently, I've
+              developed a growing passion for mobile development, exploring
+              React Native and cross-platform solutions to extend my expertise
+              into the mobile ecosystem.
             </p>
           </div>
         </section>
@@ -103,6 +107,34 @@ const About = () => {
                 </li>
                 <li className="flex items-center text-text-secondary">
                   <FaAws className="text-accent-orange mr-2" /> AWS
+                </li>
+              </ul>
+            </div>
+
+            {/* Mobile Development */}
+            <div className="bg-foreground-dark border border-border-color rounded-lg p-6">
+              <h3 className="text-xl text-accent-orange mb-4 flex items-center">
+                <FaMobile className="mr-2" /> Mobile Development
+                <span className="text-sm text-accent-green ml-2 px-2 py-1 bg-background-dark rounded">Learning</span>
+              </h3>
+              <ul className="space-y-3">
+                <li className="flex items-center text-text-secondary">
+                  <FaReact className="text-accent-blue mr-2" /> React Native
+                </li>
+                <li className="flex items-center text-text-secondary">
+                  <SiExpo className="text-accent-green mr-2" /> Expo
+                </li>
+                <li className="flex items-center text-text-secondary">
+                  <SiFlutter className="text-accent-blue mr-2" /> Flutter
+                </li>
+                <li className="flex items-center text-text-secondary">
+                  <SiTypescript className="text-accent-orange mr-2" /> TypeScript Mobile
+                </li>
+                <li className="flex items-center text-text-secondary">
+                  <FaMobile className="text-accent-green mr-2" /> Cross-Platform UI
+                </li>
+                <li className="flex items-center text-text-secondary">
+                  <FaCode className="text-accent-blue mr-2" /> App Store Deployment
                 </li>
               </ul>
             </div>

@@ -14,15 +14,24 @@ interface Project {
 const projectsData: Project[] = [
   {
     id: 1,
-    title: "CulinaryConnect",
-    description: "A full-stack application connecting food enthusiasts with local chefs. Features user authentication, chef profiles, recipe sharing, and booking system.",
-    technologies: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
-    imageUrl: "/illustrations/culinaryconnect.svg",
-    githubUrl: "https://github.com/Jeanfr1/CulinaryConnect",
-    liveUrl: "https://culinaryconnectt.netlify.app"
+    title: "Gift Tracker",
+    description: "A modern fullstack solution for tracking gifts, events & reminders with AWS cloud infrastructure. Features secure authentication, real-time notifications, and image storage.",
+    technologies: ["React", "TypeScript", "TailwindCSS", "AWS DynamoDB", "Lambda", "S3"],
+    imageUrl: "/illustrations/gifttracker.svg",
+    githubUrl: "https://github.com/Jeanfr1/marie-mobile-canvas",
+    liveUrl: "https://mgiftlist.netlify.app"
   },
   {
     id: 2,
+    title: "KASST MVP",
+    description: "🚀 Currently in production - An MVP financial technology platform for investment tracking and market analysis. Actively being developed with new features added regularly.",
+    technologies: ["React", "TypeScript", "Next.js", "Node.js", "Express", "Chart.js"],
+    imageUrl: "/illustrations/kasstmvp.svg",
+    githubUrl: "https://mvpkasst.netlify.app",
+    liveUrl: "https://mvpkasst.netlify.app"
+  },
+  {
+    id: 3,
     title: "CrisEnergy",
     description: "A modern energy management platform with real-time monitoring, analytics, and optimization tools for sustainable energy consumption.",
     technologies: ["React", "TypeScript", "Next.js", "Chart.js", "Tailwind CSS"],
@@ -31,7 +40,7 @@ const projectsData: Project[] = [
     liveUrl: "https://crisenergy.netlify.app"
   },
   {
-    id: 3,
+    id: 4,
     title: "KASST",
     description: "A financial technology platform that helps users track investments, analyze market trends, and make data-driven financial decisions.",
     technologies: ["React", "TypeScript", "Redux", "Node.js", "Express"],
@@ -40,7 +49,7 @@ const projectsData: Project[] = [
     liveUrl: "https://kasst.netlify.app"
   },
   {
-    id: 4,
+    id: 5,
     title: "Viajantes Sem Fronteiras",
     description: "A travel community platform for sharing experiences, tips, and organizing group trips. Features interactive maps and destination guides.",
     technologies: ["React", "TypeScript", "Firebase", "Google Maps API"],
@@ -49,7 +58,7 @@ const projectsData: Project[] = [
     liveUrl: "https://viajantesemfronteiras.netlify.app"
   },
   {
-    id: 5,
+    id: 6,
     title: "Agence Jaraujo",
     description: "A professional portfolio and service showcase for a digital agency specializing in web development, design, and digital marketing.",
     technologies: ["React", "TypeScript", "Next.js", "Framer Motion", "Tailwind CSS"],

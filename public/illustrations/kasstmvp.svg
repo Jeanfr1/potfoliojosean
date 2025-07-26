@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300" fill="none">
+  <!-- Main design similar to KASST but with MVP elements -->
+  <path d="M200 50C200 50 164.5 86 105 86C45.5 86 10 50 10 50V250C10 250 45.5 214 105 214C164.5 214 200 250 200 250V50Z" fill="#615FFF" opacity="0.2"/>
+  <path d="M200 50C200 50 235.5 86 295 86C354.5 86 390 50 390 50V250C390 250 354.5 214 295 214C235.5 214 200 250 200 250V50Z" fill="#00D5BE" opacity="0.2"/>
+  <path d="M105 86C164.5 86 200 50 200 50V250C200 250 164.5 214 105 214C45.5 214 10 250 10 250V50C10 50 45.5 86 105 86Z" stroke="#615FFF" stroke-width="4"/>
+  <path d="M295 86C235.5 86 200 50 200 50V250C200 250 235.5 214 295 214C354.5 214 390 250 390 250V50C390 50 354.5 86 295 86Z" stroke="#00D5BE" stroke-width="4"/>
+
+  <!-- Central elements -->
+  <circle cx="105" cy="150" r="18" fill="#615FFF"/>
+  <circle cx="295" cy="150" r="18" fill="#00D5BE"/>
+
+  <!-- MVP indicators - construction/work in progress -->
+  <path d="M160 120L240 180" stroke="#FFB86A" stroke-width="4"/>
+  <path d="M160 180L240 120" stroke="#FFB86A" stroke-width="4"/>
+
+  <!-- Work in progress dots -->
+  <circle cx="200" cy="120" r="4" fill="#FFB86A"/>
+  <circle cx="200" cy="140" r="4" fill="#FFB86A"/>
+  <circle cx="200" cy="160" r="4" fill="#FFB86A"/>
+  <circle cx="200" cy="180" r="4" fill="#FFB86A"/>
+
+  <!-- Production badge -->
+  <rect x="320" y="30" width="60" height="20" rx="10" fill="#FFB86A" opacity="0.3"/>
+  <rect x="320" y="30" width="60" height="20" rx="10" stroke="#FFB86A" stroke-width="2"/>
+</svg>
